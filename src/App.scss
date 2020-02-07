@@ -1,0 +1,21 @@
+@import './styles/colors.scss';
+@import './styles/text.scss';
+
+.app {
+  text-align: center;
+  background-color: #132f57;
+  height: 100vh;
+}
+
+.title {
+  color: $maize;
+  font-size: $large;
+  font-weight: $light;
+  margin-top: 18px;
+  margin-bottom: 48px;
+}
+
+.app header {
+  display: flex;
+  justify-content: center;
+}
