@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { Card } from '../card/Card';
+import { CardList } from '../cardList/CardList';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
@@ -16,7 +16,7 @@ const App = () => {
           <h1 className="title">MBus</h1>
         </header>
         <div className="cardList">
-          <Card stopId={137}></Card>
+          <CardList></CardList>
         </div>
       </div>
     </ApolloProvider>
