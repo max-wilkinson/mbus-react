@@ -4,4 +4,5 @@ export default interface Stop {
   description: string;
   lat: number;
   lon: number;
+  distance?: number;
 }
