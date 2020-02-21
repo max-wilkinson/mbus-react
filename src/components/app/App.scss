@@ -4,14 +4,14 @@
 .app {
   background-color: #132f57;
   min-height: 100vh;
+  padding: 24px 0;
 }
 
 .title {
   color: $maize;
   font-size: $large;
   font-weight: $light;
-  margin-top: 18px;
-  margin-bottom: 48px;
+  margin: 0;
 }
 
 .app header {
