@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
+import { RouteDetails } from './route/RouteDetails';
+import { routeDictionary } from '../../models/Route';
 import Stop from '../../models/Stop';
 import './Card.scss';
 
@@ -23,8 +25,9 @@ const ETAROUTES = gql`
 `;
 
 export const Card = (props: Props) => {
-  let defaultEtas: { [id: string]: number[] } = {};
+  let defaultEtas: routeDictionary = {};
   const [etasByRoute, setEtasByRoute] = useState(defaultEtas);
+
   const { loading, error, data } = useQuery(ETAROUTES, {
     variables: { stop: Number(props.stop.id) }
   });
@@ -34,7 +37,7 @@ export const Card = (props: Props) => {
       return;
     }
 
-    const combinedEtas: any = {};
+    const combinedEtas: routeDictionary = {};
 
     for (const eta of data.etas) {
       if (eta.route in combinedEtas) {
@@ -57,26 +60,14 @@ export const Card = (props: Props) => {
       {Object.keys(etasByRoute).map((route: string, i: number) => {
         return (
           <div className="routeDetails" key={i}>
-            <h3 className="routeName">{getRouteName(route, data.routes)}</h3>
-            {Object.values(etasByRoute[route]).map((eta: any, i: number) => {
-              return (
-                <h4 className="routeStatus" key={i}>
-                  {eta} minutes until next bus
-                </h4>
-              );
-            })}
+            <RouteDetails
+              routeId={route}
+              routes={data.routes}
+              etasByRoute={etasByRoute}
+            ></RouteDetails>
           </div>
         );
       })}
     </div>
   );
 };
-
-function getRouteName(routeId: string, routes: any): String {
-  for (const route of routes) {
-    if (route.id === routeId) {
-      return route.name;
-    }
-  }
-  return 'Unknown Route';
-}
