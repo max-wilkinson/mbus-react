@@ -16,6 +16,8 @@ With MBus, you are always in control. Your location will only be fetched when th
 
 This version of MBus is a React web app. This means it will run in any modern browser. It is also designed to support the PWA (progressive web app) paradigm.
 
+> A hosted version of the app can be accessed at: https://max-wilkinson.github.io/mbus-react
+
 ## Release Notes
 
 MBus is in public beta. I am hard at work creating the best experience possible for this app. If you have any feedback, feel free to submit an issue to this repository.
