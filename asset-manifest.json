@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mbus-react/static/css/main.9fa75414.chunk.css",
+    "main.js": "/mbus-react/static/js/main.e9d807c6.chunk.js",
+    "main.js.map": "/mbus-react/static/js/main.e9d807c6.chunk.js.map",
+    "runtime-main.js": "/mbus-react/static/js/runtime-main.88296aba.js",
+    "runtime-main.js.map": "/mbus-react/static/js/runtime-main.88296aba.js.map",
+    "static/js/2.cf19241f.chunk.js": "/mbus-react/static/js/2.cf19241f.chunk.js",
+    "static/js/2.cf19241f.chunk.js.map": "/mbus-react/static/js/2.cf19241f.chunk.js.map",
+    "index.html": "/mbus-react/index.html",
+    "precache-manifest.91a75236fed60788fb7afaf33ddcc354.js": "/mbus-react/precache-manifest.91a75236fed60788fb7afaf33ddcc354.js",
+    "service-worker.js": "/mbus-react/service-worker.js",
+    "static/css/main.9fa75414.chunk.css.map": "/mbus-react/static/css/main.9fa75414.chunk.css.map",
+    "static/js/2.cf19241f.chunk.js.LICENSE.txt": "/mbus-react/static/js/2.cf19241f.chunk.js.LICENSE.txt",
+    "static/media/accentBars.svg": "/mbus-react/static/media/accentBars.50ec595e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88296aba.js",
+    "static/js/2.cf19241f.chunk.js",
+    "static/css/main.9fa75414.chunk.css",
+    "static/js/main.e9d807c6.chunk.js"
+  ]
+}
