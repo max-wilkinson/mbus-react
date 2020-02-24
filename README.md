@@ -18,6 +18,8 @@ This version of MBus is a React web app. This means it will run in any modern br
 
 > A hosted version of the app can be accessed at: https://max-wilkinson.github.io/mbus-react
 
+This app makes use of the [mbus-graphql library](https://github.com/max-wilkinson/mbus-graphql) for its data retrieval.
+
 ## Release Notes
 
 MBus is in public beta. I am hard at work creating the best experience possible for this app. If you have any feedback, feel free to submit an issue to this repository.
