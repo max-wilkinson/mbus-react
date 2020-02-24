@@ -7,6 +7,21 @@
   padding: 24px 0;
 }
 
+.accentBars {
+  position: fixed;
+  z-index: 1;
+}
+
+.topBars {
+  left: -9rem;
+  top: -3.6rem;
+}
+
+.bottomBars {
+  right: -6.5rem;
+  bottom: -3.6rem;
+}
+
 .title {
   color: $maize;
   font-size: $large;
@@ -18,8 +33,11 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  z-index: 2;
 }
 
 .cardList {
+  position: relative;
   margin: 0 8vw;
+  z-index: 2;
 }
